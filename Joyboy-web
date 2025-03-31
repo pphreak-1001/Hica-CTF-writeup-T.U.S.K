@@ -1,0 +1,11 @@
+1. Go to /cam-feed/ and you'll see a comment with hint that "kid = "main" in JWT and "JWT Secret = NIKA-NIKA-NO-MI"
+
+2. Use the Jwt secret and create a Symmetric JWT with its kid = main.
+
+3. Through basic recon, found the directory "/swagger-joyboy" and hence got exposed to various endpoints.
+
+4. Used the created jwt on https://ggggfajajs.onrender.com/api/system/telemetry and it said "Not gear 5" then through various trials and error guessed "payload = {role: "gear5"} and it worked!
+
+{"data":"HICA{gear5_awakening_joyboy_legacy}","message":"Gear5 protocol engaged. Legacy unlocked."}
+
+5. Got the flag = HICA{gear5_awakening_joyboy_legacy}
