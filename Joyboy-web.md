@@ -61,9 +61,4 @@ print(token)
 ```
 
 ## Conclusion
-This challenge demonstrated the importance of properly securing JWT authentication mechanisms. The ability to control the `kid` parameter allowed for bypassing authentication by forging a JWT token using a known secret. Always ensure:
-- Secrets are not hardcoded in source code.
-- JWT verification enforces strong signing keys.
-- API endpoints are secured with proper authentication and authorization mechanisms.
-
-Flag successfully captured!
+Flag: HICA{gear5_awakening_joyboy_legacy}
